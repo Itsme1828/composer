@@ -186,8 +186,7 @@ To add Composer to an existing **Dockerfile** you can simply copy binary file fr
 COPY --from=composer/composer:latest-bin /composer /usr/bin/composer
 
 # Specific release
-COPY --from=composer/composer:2-bin /composer /usr/bin/composer
-```
+COPY --from=composer/composer:2-bin /composer /usr/bin/composer/composer
 
 Read the [image description](https://hub.docker.com/r/composer/composer) for further usage information.
 
